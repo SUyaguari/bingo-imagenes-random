@@ -1,0 +1,53 @@
+<div class="centrar">
+    <h1 class="letra">BINGO SALESIANO</h1>
+  </div>
+  
+  <br>
+  
+  <div>
+    <div class="row">
+  
+      <div class="col-4 centrar">
+        <div class="table-wrapper">
+          <table class="table table-striped table-hover">
+            <thead>
+              <tr>
+                <th scope="col">Name</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let v of vectorS">
+                <th>{{v.name}}</th>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+  
+      <div class="col-8 centrar">
+        
+        <div>
+  
+          <div class="rifa">
+            <img src={{url}} alt="img" height="350px" width="450px">
+          </div>
+  
+          <div class="centarRifa">
+            <p class="letra"> {{a}} </p>
+          </div>
+  
+          <div class=" centrar">
+            <div>
+              <button class="btn btn-primary" (click)="random()">Iniciar</button>
+              <!--
+              <button class="btn btn btn-danger" (click)="cambio">Parar</button>-->
+            </div>
+          </div>
+    
+  
+        </div>
+  
+      </div>
+  
+    </div>
+  </div>

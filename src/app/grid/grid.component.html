@@ -1,0 +1,71 @@
+<table class="table">
+    <thead>
+      <tr>
+        <!-- <th scope="col">First</th>
+        <th scope="col">2</th>
+        <th scope="col">3</th>
+        <th scope="col">4</th>
+        <th scope="col">5</th>
+        <th scope="col">First</th>
+        <th scope="col">2</th>
+        <th scope="col">3</th>
+        <th scope="col">4</th>
+        <th scope="col">5</th> -->
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td *ngFor="let a of vector">
+                <img src={{a.url}} alt="img" height="80" width="80">
+            </td>
+        </tr>
+        <tr>
+            <td *ngFor="let a of vector2">
+                <img src={{a.url}} alt="img" height="80" width="80">
+            </td>
+          </tr>
+          <tr>
+            <td *ngFor="let a of vector3">
+                <img src={{a.url}} alt="img" height="80" width="80">
+            </td>
+          </tr>
+          <tr>
+            <td *ngFor="let a of vector4">
+                <img src={{a.url}} alt="img" height="80" width="80">
+            </td>
+          </tr>
+          <tr>
+            <td *ngFor="let a of vector5">
+                <img src={{a.url}} alt="img" height="80" width="80">
+            </td>
+          </tr>
+          <tr>
+            <td *ngFor="let a of vector6">
+                <img src={{a.url}} alt="img" height="80" width="80">
+            </td>
+          </tr>
+          <tr>
+            <td *ngFor="let a of vector7">
+                <img src={{a.url}} alt="img" height="80" width="80">
+            </td>
+          </tr>
+          <tr>
+            <td *ngFor="let a of vector8">
+                <img src={{a.url}} alt="img" height="80" width="80">
+            </td>
+          </tr>
+    </tbody>
+  </table>
+  <div class="row">
+  
+    <div class="col-4 centrar">
+    <button class="btn btn-primary" (click)="evento()">Bingo</button>
+    </div>
+    <div class="col-8">
+      <div class="centarRifa">
+        <p class="letra">{{name}}</p>
+      </div>
+    </div>
+  </div>
+ 
+  <br>
